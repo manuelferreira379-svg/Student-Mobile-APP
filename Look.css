@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #174a7e;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #555;
+}
+
+.registration-section,
+.students-section {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+    color: #174a7e;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #7bb5f0;
+    border-color: #174a7e;
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #174a7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #10365c;
+}
+
+.delete-button {
+    background-color: #b42318;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.delete-button:hover {
+    background-color: #8d1c13;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.message-success {
+    color: #18723b;
+}
+
+.message-error {
+    color: #b42318;
+}
+
+#studentCount {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #174a7e;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+#emptyMessage {
+    color: #666;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .registration-section,
+    .students-section {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .delete-button {
+        width: auto;
+    }
+}
